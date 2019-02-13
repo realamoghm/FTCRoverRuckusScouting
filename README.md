@@ -9,6 +9,10 @@ It is important to note that this repository is large and can take a long time a
 * You can use the "Download Zip" button available through the main repository page.  Downloading the project as a .ZIP file will keep the size of the download manageable.
 
 ## Version/Release Information
+(Version 3.2, Built on 1/17/2019)
+Changes Include:
+
+* Bug has been fixed where on smaller mobile devices, the Live Score wouldn't show on the top bar due to overcrowding
 (Version 3.1, Built on 1/7/2019)
 Changes Include:
 
