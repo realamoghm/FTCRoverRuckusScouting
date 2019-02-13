@@ -13,7 +13,10 @@ It is important to note that this repository is large and can take a long time a
 Changes Include:
 
 * Bug has been fixed where on smaller mobile devices, the Live Score wouldn't show on the top bar due to overcrowding
+* App has not been resubmitted to the Google Play Store
+
 (Version 3.1, Built on 1/7/2019)
+
 Changes Include:
 
 * Bug has been fixed where on newer phones above API 22, the storage prompt for external directory storage wouldn't show up, this led to the CSV file not being stored
