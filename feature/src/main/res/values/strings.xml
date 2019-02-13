@@ -1,0 +1,78 @@
+<!--
+  ~ Copyright (c) 2019
+  ~ All rights reserved Amogh Mehta
+  ~ Last Modified 1/7/19 12:18 PM
+  -->
+
+<resources>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="UnusedString">N/A</string>
+
+
+    <!-- String for displaying on Screen-->
+    <string name="TeamName">Team Name</string>
+    <string name="TeamNumber">Team no.</string>
+    <string name="GameNumber">Game no.</string>
+    <string name="GameDate">Game Date</string>
+    <string name="GameScore">Game Score</string>
+    <string name="ScoutView">Scout</string>
+    <string name="title_activity_scout_detail">ScoutDetailActivity</string>
+
+    <!-- Navigation Drawer display -->
+    <string name="ScoutDetail">Detail</string>
+    <string name="ScoutCreate">Create</string>
+
+    <!-- Maximum Length -->
+
+    <string name="maximum_value_len_8">8</string>
+    <string name="maximum_value_len_16">16</string>
+    <string name="maximum_value_len_32">32</string>
+    <string name="maximum_value_len_128">128</string>
+    <string name="maximum_value_len_512">512</string>
+
+    <string name="helpguideinformation">To Make a Record:\n
+Step 1: Select the Plus button in  the bottom right corner of the screen OR select the Menu button in the top left corner of the screen and then select Create in the menu that appears\n
+Step 2: Fill out the Team Name and Team Number fields\n
+Step 3: Fill out the Game Number field\n
+Step 4: Fill out the Autonomous section for the Autonomous section of the FTC game\n
+Step 5: Fill out the TeleOp section for the Driver Controlled/TeleOp section of the FTC game\n
+Step 6: Fill out the End Game section for the End Game section of the FTC game\n
+Step 7: Optionally, fill out the Comment section with minor details about the FTC game\n
+Step 8: Select the Check button which appears in the top right corner of the screen\n
+\n\n
+To View a Record:\n
+Step 1: To get to the Record Viewer, select the Menu button in the top left corner of the screen and then select View in the menu that appears\n
+Step 2: Select the record which you wish to view, you may use the Search function in the top right corner of the Record Viewer to find the record you wish to view\n
+\n\n
+To Edit a Record:\n
+Step 1: Go to the Record Viewer\n
+Step 2: Select the record which you wish to edit, you may use the Search function in the top right corner of the Record Viewer to find the record you wish to edit\n
+Step 3: Press the Edit tool in the top right corner\n
+Step 4: Once you are done editing, you may press the Check button in the top right corner of the screen, this will return you to the Record Viewer\n
+\n\n
+To Delete a Record:\n
+Step 1: Go to the Record Viewer\n
+Step 2: Select the record which you wish to delete, you may use the Search function in the top right corner of the Record Viewer to find the record you wish to delete\n
+Step 3: Press the Delete button in the top right corner next to the Edit tool\n
+\n\n
+To Select a Color for which team you are judging:\n
+Step 1: Select the Menu button in the top right corner of the screen\n
+Step 2: Select the color under Selector in the menu that appears\n
+\n\n
+To Export a Record:\n
+Step 1: Select the Menu button in the top right corner of the screen\n
+Step 2: Select the Export tool in the Menu that appears\n
+Step 3: Select Yes on the pop-up that appears to allow storage of the exported file in your device (this pop-up will only appear once)\n
+Step 4: Follow the path displayed to find the exported file which can then be transferred anywhere\n
+
+</string>
+
+</resources>

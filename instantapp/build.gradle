@@ -1,0 +1,12 @@
+/*
+ * Copyright (c) 2019
+ * All rights reserved Amogh Mehta
+ * Last Modified 1/7/19 12:18 PM
+ */
+
+apply plugin: 'com.android.instantapp'
+
+dependencies {
+    implementation project(':feature')
+    implementation project(':base')
+}

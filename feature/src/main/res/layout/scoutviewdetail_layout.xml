@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019
+  ~ All rights reserved Amogh Mehta
+  ~ Last Modified 1/7/19 12:18 PM
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin" 
+    tools:context=".ScoutDetail.ScoutNewCreateFragment">
+
+    <ScrollView
+        android:id="@+id/scoutviewscrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:id="@+id/scoutviewlinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/scoutviewtitletablelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/scoutviewtitle"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:id="@+id/scoutviewbtitletablerow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/textView01"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Team Name"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/colorTextTitle" />
+
+                    <TextView
+                        android:id="@+id/scoutviewteamname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/black" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/scoutviewteamnumbertablerow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/textView02"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Team Number"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/colorTextTitle" />
+
+                    <TextView
+                        android:id="@+id/scoutviewteamnumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/black" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/scoutviewgameinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/tableheader"
+                android:paddingLeft="10dp"
+                android:text="Game Info"
+                android:textAlignment="textStart"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TableLayout
+                android:id="@+id/scoutviewgameinfotablelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/scoutviewgameinfo"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:id="@+id/scoutviewgamenumbertablerow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Game Number"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/colorTextTitle" />
+
+                    <TextView
+                        android:id="@+id/scoutviewgamenumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/black" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/scoutviewgamescoretablerow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Game Score"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/colorTextTitle" />
+
+                    <TextView
+                        android:id="@+id/scoutviewgamescore"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/black" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/scoutviewgamedatetablerow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Game Date"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/colorTextTitle" />
+
+                    <TextView
+                        android:id="@+id/scoutviewgamedate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/black" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/scoutviewautonomousheader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/tableheader"
+                android:paddingLeft="10dp"
+                android:text="Autonomous"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TableLayout
+                android:id="@+id/scoutviewautonomoustablelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/scoutviewautonomous"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:id="@+id/scoutviewlandedtablerow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Landed"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/colorTextTitle" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_scoutviewlanded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:layoutDirection="rtl"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/scoutviewsampledtablerow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sampled"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/colorTextTitle" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_scoutviewsampled"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:layoutDirection="rtl"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/scoutviewclaimeddepottablerow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Claimed Depot"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/colorTextTitle" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_scoutviewclaimeddepot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:layoutDirection="rtl"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/scoutviewparkedtablerow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Parked"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/colorTextTitle" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_scoutviewparked"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:layoutDirection="rtl"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TextView
+                android:id="@+id/scoutviewteleopheader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/tableheader"
+                android:paddingLeft="10dp"
+                android:text="TeleOp"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TableLayout
+                android:id="@+id/scoutviewteleopTableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:id="@+id/scoutviewdepotscoredtablerow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Depot Scored"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/colorTextTitle" />
+
+                    <TextView
+                        android:id="@+id/scoutviewdepotscored"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/black" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/scoutviewsliverlanderscoredtablerow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sliver Lander Scored"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/colorTextTitle" />
+
+                    <TextView
+                        android:id="@+id/scoutviewsliverlanderscored"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/black" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/scoutviewgoldlanderscoredtablerow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Gold Lander Scored"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/colorTextTitle" />
+
+                    <TextView
+                        android:id="@+id/scoutviewgoldlanderscored"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/black" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/scoutviewendgameheader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/tableheader"
+                android:paddingLeft="10dp"
+                android:text="End Game"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TableLayout
+                android:id="@+id/scoutviewendgametablelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/scoutviewendgame"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:id="@+id/scoutviewlatechedtablerow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/textView51"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Latched"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/colorTextTitle" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_scoutviewlatched"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:layoutDirection="rtl"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/scoutviewcraterpartialtablerow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/textView52"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Crater Partial"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/colorTextTitle" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_scoutviewcraterpartial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:layoutDirection="rtl"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/scoutviewcraterfulltablerow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/textView53"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Crater Full"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/colorTextTitle" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_scoutviewcraterfull"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:layoutDirection="rtl"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/displaycommentsheader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/tableheader"
+                android:paddingLeft="10dp"
+                android:text="Comments"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TableLayout
+                android:id="@+id/displaycommentsTableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:id="@+id/displaycommenttablerow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="0dp">
+
+                    <TextView
+                        android:id="@+id/scoutviewcomments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="100"
+                        android:minLines="1"
+                        android:text="@string/UnusedString"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/black" />
+                </TableRow>
+            </TableLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

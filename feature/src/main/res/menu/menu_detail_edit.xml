@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019
+  ~ All rights reserved Amogh Mehta
+  ~ Last Modified 1/7/19 12:18 PM
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app1="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_actionbardelete"
+        android:orderInCategory="100"
+        android:title="Delete"
+        android:icon="@drawable/baseline_delete_forever_black_18dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app1:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_actionbaredit"
+        android:orderInCategory="100"
+        android:title="Edit"
+        android:icon="@drawable/baseline_edit_black_18dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app1:showAsAction="always" />
+
+
+
+</menu>

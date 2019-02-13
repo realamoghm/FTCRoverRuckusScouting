@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019
+  ~ All rights reserved Amogh Mehta
+  ~ Last Modified 1/7/19 12:18 PM
+  -->
+
+<resources>
+    <!-- Android Color Palette  : https://material.io/guidelines/style/color.html#color-color-palette -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorYellowGreen">#9ACD32</color>  <!-- #9ACD32, 154,205,50 -->
+    <color name="colorAppleGreen">#8DB600</color>  <!-- #8DB600, 141, 182, 0 -->
+    <color name="colorMehndiGreen">#A0BA0A</color>  <!-- #A0BA0A, 160, 186, 10 -->
+    <color name="colorTextTitle">#0E7AFE</color>
+    <color name="limegreen">#CDDC39</color>
+    <color name="darkgray">#424242</color>
+    <color name="gray">#757575</color>
+    <color name="middlegray">#A9A9A9</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="lightgray">#D3D3D3</color>
+    <color name="tableheader">#EBEBEB</color>
+    <color name="asobtextcolor">#1E82FF</color>
+    <color name="ascbtextcolor">#1E82FF</color>
+    <color name="alertsheetotherbuttontextcolor">#1E82FF</color>
+    <color name="AlertSheetCancelButtonTextColor">#1E82FF</color>
+    <color name="COLORS_RED_1">#880000</color>
+    <color name="COLORS_RED_2">#FF0000</color>
+    <color name="COLORS_BLUE_1">#3F51B5</color>
+    <color name="COLORS_BLUE_2">#1E82FF</color>
+
+
+</resources>

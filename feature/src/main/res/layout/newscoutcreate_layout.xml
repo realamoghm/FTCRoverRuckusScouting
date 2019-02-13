@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019
+  ~ All rights reserved Amogh Mehta
+  ~ Last Modified 1/7/19 12:18 PM
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context=".ScoutDetail.ScoutNewCreateFragment">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:id="@+id/newscoutscrollView"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newscoutlinearlayout">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/newscoutlinearlayout"
+            android:layout_alignParentStart="true">
+
+            <TableRow
+                android:id="@+id/newscoutteamnametablerow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team Name"
+                    android:id="@+id/textView01"
+                    android:textColor="@color/colorTextTitle"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPostalAddress"
+                    android:ems="10"
+                    android:maxLength="@string/maximum_value_len_128"
+                    android:id="@+id/newscoutteamname"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/newscoutteamnumbertablerow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team Number"
+                    android:id="@+id/textView02"
+                    android:textColor="@color/colorTextTitle"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:maxLength="@string/maximum_value_len_128"
+                    android:id="@+id/newscoutteamnumber"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+            </TableRow>
+        </TableLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Game Info"
+            android:id="@+id/newscoutgameinfoheader"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/tableheader"
+            android:textAlignment="textStart"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:paddingLeft="10dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/newscoutgameinfotablelayout"
+            android:layout_alignParentStart="true">
+
+            <TableRow
+                android:id="@+id/newscoutgameinfotablerow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Game Number"
+                    android:id="@+id/textView11"
+                    android:textColor="@color/colorTextTitle"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:maxLength="@string/maximum_value_len_16"
+                    android:id="@+id/newscoutgamenumber"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+            </TableRow>
+
+        </TableLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Autonomous"
+            android:id="@+id/newscoutautonomousheader"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/tableheader"
+            android:textAlignment="textStart"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:paddingLeft="10dp"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/newscoutautonomoustablelayout"
+            android:layout_alignParentStart="true">
+
+            <TableRow
+                android:id="@+id/newscoutlandedtablerow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Landed"
+                    android:id="@+id/textView21"
+                    android:textColor="@color/colorTextTitle"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <CheckBox android:id="@+id/checkbox_newscoutlanded"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layoutDirection="rtl"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/newscoutsampledtablerow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sampled"
+                    android:id="@+id/textView22"
+                    android:textColor="@color/colorTextTitle"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <CheckBox android:id="@+id/checkbox_newscoutsampled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layoutDirection="rtl"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            </TableRow>
+            <TableRow
+            android:id="@+id/newscoutclaimeddepottablerow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Claimed Depot"
+                android:id="@+id/textView23"
+                android:textColor="@color/colorTextTitle"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <CheckBox android:id="@+id/checkbox_newscoutclaimeddepot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layoutDirection="rtl"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        </TableRow>
+            <TableRow
+                android:id="@+id/newscoutparkedtablerow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parked"
+                    android:id="@+id/textView24"
+                    android:textColor="@color/colorTextTitle"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <CheckBox android:id="@+id/checkbox_newscoutparked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layoutDirection="rtl"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TeleOp"
+            android:id="@+id/newscoutteleopheader"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/tableheader"
+            android:textAlignment="textStart"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:paddingLeft="10dp"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/newscoutteleoptablelayout"
+            android:layout_alignParentStart="true">
+
+            <TableRow
+                android:id="@+id/newscoutdepotscoredtablerow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Depot Scored"
+                    android:id="@+id/textView41"
+                    android:textColor="@color/colorTextTitle"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:maxLength="@string/maximum_value_len_16"
+                    android:id="@+id/newscoutdepotscored"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/newscoutsilverlanderscoredtablerow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Silver Lander Scored"
+                    android:id="@+id/textView42"
+                    android:textColor="@color/colorTextTitle"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:maxLength="@string/maximum_value_len_16"
+                    android:id="@+id/newscoutsilverlanderscored"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/newscoutgoldlanderscoredtablerow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gold Lander Scored"
+                    android:id="@+id/textView43"
+                    android:textColor="@color/colorTextTitle"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:maxLength="@string/maximum_value_len_16"
+                    android:id="@+id/newscoutgoldlanderscored"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="End Game"
+            android:id="@+id/newscoutendgameheader"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/tableheader"
+            android:textAlignment="textStart"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:paddingLeft="10dp"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/newscoutendgametablelayout"
+            android:layout_alignParentStart="true">
+
+            <TableRow
+                android:id="@+id/newscoutlatchedtablerow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Latched"
+                    android:id="@+id/textView51"
+                    android:textColor="@color/colorTextTitle"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <CheckBox android:id="@+id/checkbox_newscoutlatched"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layoutDirection="rtl"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/newscoutcraterpartialtablerow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crater Partial"
+                    android:id="@+id/textView52"
+                    android:textColor="@color/colorTextTitle"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                <CheckBox android:id="@+id/checkbox_newscoutcraterpartial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layoutDirection="rtl"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/newscoutcraterfulltablerow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crater Full"
+                    android:id="@+id/textView53"
+                    android:textColor="@color/colorTextTitle"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <CheckBox android:id="@+id/checkbox_newscoutcraterfull"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layoutDirection="rtl"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            </TableRow>
+
+
+        </TableLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comment"
+            android:id="@+id/newheadercomment"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/tableheader"
+            android:textAlignment="textStart"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:paddingLeft="10dp"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/newcommentstablelayout"
+            android:stretchColumns="*"
+            android:layout_alignParentStart="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine|text"
+                    android:gravity="top|left"
+                    android:ems="10"
+                    android:lines="20"
+                    android:minLines="4"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    android:layout_weight="1"
+                    android:maxLength="@string/maximum_value_len_512"
+                    android:imeOptions="actionDone"
+                    android:id="@+id/newscoutcomments" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

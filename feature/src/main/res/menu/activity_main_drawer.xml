@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019
+  ~ All rights reserved Amogh Mehta
+  ~ Last Modified 1/7/19 12:18 PM
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+    <item android:title="">
+        <item
+            android:id="@+id/nav_create"
+            android:icon="@drawable/round_add_black_18dp"
+            android:title="Create" />
+        <item
+            android:id="@+id/nav_view"
+            android:icon="@drawable/baseline_view_list_black_18dp"
+            android:title="View" />
+
+    </item>
+    </group>
+
+
+
+    <item android:title="Selector">
+    <group android:checkableBehavior="single">
+        <menu>
+           <item
+                android:id="@+id/action_redone"
+                android:width="24dp"
+                android:height="24dp"
+                android:viewportHeight="24.0"
+                android:viewportWidth="24.0"
+                android:icon="@drawable/baseline_color_lens_black_18dp"
+                android:title="Red 1"/>
+
+            <item
+                android:id="@+id/action_redtwo"
+                android:icon="@drawable/baseline_color_lens_black_18dp"
+                android:title="Red 2"/>
+
+            <item
+                android:id="@+id/action_blueone"
+                android:icon="@drawable/baseline_color_lens_black_18dp"
+                android:title="Blue 1"/>
+
+            <item
+                android:id="@+id/action_bluetwo"
+                android:icon="@drawable/baseline_color_lens_black_18dp"
+                android:title="Blue 2"/>
+        </menu>
+    </group>
+    </item>
+
+    <group android:checkableBehavior="single">
+    <item android:title="Data">
+        <menu>
+            <item
+                android:id="@+id/nav_export"
+                android:icon="@drawable/baseline_download_black_18dp"
+                android:title="Export" />
+        </menu>
+    </item>
+    </group>
+
+    <item android:title="Selector">
+        <menu>
+            <item
+                android:id="@+id/nav_user_guide"
+                android:icon="@drawable/baseline_help_black_18dp"
+                android:title="User Guide "/>
+        </menu>
+    </item>
+</menu>
+
